@@ -31,9 +31,7 @@ o	Auth : Bearer Token
 *	Body
 {
     "id":2,
-    "username":"hana saja sudah dirubah",
-    "phone":"081234567890",
-    "address":"menteng atas"
+    "username":"username",
 }
 
 *	Response:
