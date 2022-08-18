@@ -1,7 +1,3 @@
-Kebutuhan Pengembangan
-Java version : Latest,
-
-
 
 # Design Rest API
 1. User
@@ -18,8 +14,8 @@ Java version : Latest,
           "username":"USERNAME",
           "Created_At":"BySystem",
           "Updated_At":"BySystem",
-          "phone":"081234567890",
-          "address":"menteng atas"
+          "phone":"",
+          "address":" "
       }
 
     - Response:
@@ -40,8 +36,8 @@ Java version : Latest,
     {
         "id":2,
         "username":"username",
-        "phone":"081234567890",
-        "address":"menteng atas"
+        "phone":"number",
+        "address":"address"
     }
 
   - Response:
@@ -86,6 +82,10 @@ Java version : Latest,
 
 3. Brand
 
+
+```
+- Kebutuhan Pengembangan
+- Java version : Latest,
 
 
 
