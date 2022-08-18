@@ -1,37 +1,92 @@
-## Welcome to GitHub Pages
+Kebutuhan Pengembangan
+Java version : Latest,
 
-You can use the [editor on GitHub](https://github.com/hanadiahpertiwi/Alterra_Kelompok2/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+# Design Rest API
+1. User
+-  Create User
+   - Method = POST
+   - Endpoint = api/v1/user
+   - Header:
+   - Content-Type : aplication/json
+   - Auth : Bearer Token
+   - Body
+      ```
+      {
+          "id":2,
+          "username":"USERNAME",
+          "Created_At":"BySystem",
+          "Updated_At":"BySystem",
+          "phone":"081234567890",
+          "address":"menteng atas"
+      }
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    - Response:
+      ```
+      {
+          "code": (respon code),
+          "message":"Successfully created"
+      }
 
-```markdown
-Syntax highlighted code block
+- Read User
+  - Method GET
+  - Endpoint = api/v1/user/read
+  - Header:
+  - Content-Type : aplication/json
+  - Auth : Bearer Token
+  - Body
+    ```
+    {
+        "id":2,
+        "username":"username",
+        "phone":"081234567890",
+        "address":"menteng atas"
+    }
 
-# Header 1
-## Header 2
-### Header 3
+  - Response:
+    ```
+    {
+        "code": (respon code),
+        "message":"Successfully created"
+    }
 
-- Bulleted
-- List
+- Update User
+  - Method PUT
+  - Endpoint = api/v1/user=id
+  - Header:
+  - Content-Type : aplication/json
+  - Auth : Bearer Token
+  - Body
+    {
 
-1. Numbered
-2. List
+    }
 
-**Bold** and _Italic_ and `Code` text
+  - Response:
+    ```
+    {
+        "code": (respon code),
+        "message":"Successfully updated"
+    }
+    
+- Delete User
+  - Method DELETE
+  - Endpoint = api/v1/user=id
+  - Header:
+  - Content-Type : aplication/json
+  - Auth : Bearer Token
+  - Response:
+    ```
+    {
+        "code": (respon code),
+        "message":"Successfully delete"
+    }
 
-[Link](url) and ![Image](src)
-```
+2. Produk
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+3. Brand
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hanadiahpertiwi/Alterra_Kelompok2/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
